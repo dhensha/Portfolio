@@ -86,6 +86,10 @@ h6 {
   border: none;
   border-radius: 10px;
 }
+.buttone:hover{
+  background-color: #f175b9;
+
+}
 
 .newbtn:hover{
 color:  #45505b;
@@ -722,12 +726,33 @@ section {
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+  border: none;
 }
+
+
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #148af9;
+  border: none;
 }
 
+
+.portfolio .portfolio-wrap .portfolio-links button {
+  color: #45505b;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.portfolio .portfolio-wrap .portfolio-links button :hover{
+  color: #148af9;
+  border: none;
+
+}
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
@@ -1097,3 +1122,15 @@ section {
   text-decoration: none;
 }
 
+.modal-dialog {
+  max-width: 1500px; /* Set the maximum width */
+  width: 90%; /* Adjust as needed */
+}
+
+.modal-content{
+  width: 1500px;
+}
+
+.modal-title{
+  text-align: center;
+}
