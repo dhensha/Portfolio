@@ -1134,3 +1134,9 @@ section {
 .modal-title{
   text-align: center;
 }
+
+.custom-header {
+  margin-left: 10px;
+  font-weight: 1000;
+  margin-bottom: -10px;
+}
