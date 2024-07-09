@@ -43,6 +43,13 @@ h6 {
   padding-bottom: 10px;
 }
 
+.email-me{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -340,10 +347,19 @@ color:  #45505b;
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/portfolio/background.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
+
+.background-videodeo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire section */
+}
+
 
 @media (min-width: 992px) {
   #hero {
@@ -641,8 +657,14 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
 }
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -1006,38 +1028,37 @@ section {
   
 }
 
-.info-title{
-  margin-right: 30px;
-}
+
 
 .info{
   display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center ;
   justify-content: center;
-  flex-direction: column;
-  align-items:flex-start;
-  float: left;
-  margin-left: 42%;
-}
-
-.email-button{
-  background: #fd9ad0;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
+  gap: 50px;
+  margin-right: 50px;
 }
 
 
-.email-button:hover{
-  background: #f175b9;
-  color: #45505b;
-}
+  .email-button {
+    background: #fd9ad0;
+    border: 0;
+    padding: 10px 35px; /* Set padding to adjust button size */
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    width: 150PX;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 
-.email-buttone{
-  padding: 30px;
+  .email-button:hover {
+    background: #f175b9;
+    color: #45505b;
+  }
 
-}
 
 
 .contact .info h4 {
@@ -1079,6 +1100,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  margin-left: 50px;
 }
 
 #footer h3 {
@@ -1139,4 +1161,29 @@ section {
   margin-left: 10px;
   font-weight: 1000;
   margin-bottom: -10px;
+}
+
+
+.gallery-container {
+  padding: 20px; /* Add padding for spacing */
+  max-width: 80%; /* Adjust this percentage to fit your design */
+  margin: 0 auto; /* Center the container */
+}
+
+.row {
+  margin-bottom: 20px; /* Adjust space between rows */
+}
+
+.gallery-img {
+  height: 400px; /* Set this to Z desired height for your images */
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-img {
+  height: 600px; /* Set this to Z desired height for your images */
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
