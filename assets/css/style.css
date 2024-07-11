@@ -1040,6 +1040,13 @@ section {
   margin-right: 50px;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
+  }
+}
+
 
   .email-button {
     background: #fd9ad0;
@@ -1100,7 +1107,6 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
-  margin-left: 50px;
 }
 
 #footer h3 {
