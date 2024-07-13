@@ -36,12 +36,40 @@ h6 {
 .bold {
   font-weight: 900;
 }
+.link-bar{
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .link-bar {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+}
 
 .resume-btn{
   margin-bottom: -25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .resume-btn {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+}
+
 
 .email-me{
   justify-content: center;
@@ -1043,7 +1071,13 @@ section {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .info {
+    display: flex;
+
     flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start ;
+    justify-content: center;
+    margin-left: 150px;
   }
 }
 
