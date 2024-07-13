@@ -48,8 +48,24 @@ h6 {
     display: flex;
     gap: 20px;
     flex-direction: column;
-
     justify-content: center;
+  }
+}
+
+.modal-bar{
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .link-bar {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 10px;
   }
 }
 
@@ -65,7 +81,6 @@ h6 {
     display: flex;
     gap: 20px;
     flex-direction: column;
-
     justify-content: center;
   }
 }
@@ -1205,9 +1220,18 @@ section {
 
 
 .gallery-container {
-  padding: 20px; /* Add padding for spacing */
-  max-width: 80%; /* Adjust this percentage to fit your design */
+  padding: 10px; /* Add padding for spacing */
+  max-width: 100%; /* Adjust this percentage to fit your design */
   margin: 0 auto; /* Center the container */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 20px; /* Add padding for spacing */
+    max-width: 5000px; /* Adjust this percentage to fit your design */
+    margin: 0 auto; /* Center the container */
+  }
 }
 
 .row {
